@@ -8,11 +8,13 @@ main{
     align-items: center;
     flex-direction: column;
     color: whitesmoke;
-    gap: 4rem;
+    gap: 1rem;
 }
 
 .title{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    padding-bottom: 0;
+    text-transform: uppercase;
 }
 
 .perfil {
@@ -44,9 +46,16 @@ main{
     object-fit: cover; /* recorta e centraliza */
 }
 
+.perfil-img>h2{
+    font-size: 2rem;
+    padding: 0;
+    margin-bottom: 0;
+}
+
 .perfil-desc{
     display: flex;
     justify-content: center;
+    text-align: center;
     justify-items: center;
     max-width: 50%;
     flex-wrap: wrap ;

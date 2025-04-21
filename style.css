@@ -84,5 +84,7 @@ body {
     background-color: #B92DFF;
     font-size: 1.5rem;
     color: whitesmoke;
-    /* padding: 1rem; */
+    margin-top: 2rem;
+    max-height: 3.5rem;
+    /* padding: 0rem; */
 }
