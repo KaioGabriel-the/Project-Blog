@@ -7,15 +7,10 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-/* p {
-    font-size: 1.75rem;
-    text-align: left;
-    color: black;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    width: 80%;
-    max-width: 80%;
-} */
+a:link, a:visited {
+    text-decoration: none;
+}
+
 
 .pub-body {
     font-size: 1.75rem;
@@ -61,6 +56,93 @@ h2 {
     margin: auto;
 }
 
-.vermelho {
+/* Seção sobre cores */
+.red-text {
     color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.green-text {
+    color: green;
+}
+
+.black-text {
+    color: black;
+}
+
+.white-text {
+    color: white;
+}
+
+.light-gray-text {
+    color: lightgray;
+}
+
+.dark-gray-text {
+    color: darkgray;
+}
+
+.orange-text{
+    color: orange;
+}
+
+.pink-text{
+    color: pink;
+}
+
+/* Seção sobre decorações de texto */
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.underlined-text {
+    text-decoration: underline;
+}
+
+.line-through-text {
+    text-decoration: line-through;
+}
+
+/* Seção sobre fontes */
+
+.verdana-text {
+    font-family: Verdana, sans-serif;
+}
+
+.calibri-text {
+    font-family: Calibri, sans-serif;
+}
+
+.monospace-text {
+    font-family: monospace, 'Courier New', Courier, sans-serif;
+}
+
+.arial-text {
+    font-family: Arial, sans-serif;
+}
+
+/* Seção sobre alinhamentos de texto */
+
+.left-text {
+    text-align: left;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.justified-text {
+    text-align: justify;
 }
