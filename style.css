@@ -1,3 +1,7 @@
+body {
+    margin: auto;
+}
+
 .appBar{
     display: flex;
     background-color: #B92DFF;
@@ -49,18 +53,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 70%;
     max-height: 50%;
     background-color: whitesmoke;
     padding: 2rem;
     border: 0px solid;
     border-radius: 40px;
-    transition: box-shadow 0.3s ease, transforma 0.5s ease;
+    transition: box-shadow 0.3s ease, transform 0.5s ease;
+}
+
+.container-presentation>p{
+    font-size: 1.5rem;
+    color: #B92DFF;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* max-width: 100%; */
 }
 
 .container-presentation:hover{
     transform: scale(1.1);
-    box-shadow:0 0 10rem #B92DFF, 0 0 10rem #B92DFF, 0 0 10rem #B92DFF;
+    box-shadow:0 0 7rem #B92DFF, 0 0 7rem #B92DFF, 0 0 7rem #B92DFF;
 }
 
 .footer-home{
@@ -70,5 +83,5 @@
     background-color: #B92DFF;
     font-size: 1.5rem;
     color: whitesmoke;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
