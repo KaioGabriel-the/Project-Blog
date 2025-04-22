@@ -35,7 +35,7 @@ body {
 }
 
 .page>a:hover{
-    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+   text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
 }
 
 .presentation{
