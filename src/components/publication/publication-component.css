@@ -56,6 +56,47 @@ a:link, a:visited {
     margin: auto;
 }
 
+.botao-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.menu-lateral {
+    position: fixed;
+    justify-content: flex-start;
+    top: 0;
+    align-items: center;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #B92DFF;
+    padding: 2rem 1rem;
+    transition: left 0.3s ease;
+    color: white;
+}
+
+.menu-lateral.ativo {
+    top: 0;
+    left: 0;
+}
+
+.fechar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 /* Seção sobre cores */
 .red-text {
     color: red;

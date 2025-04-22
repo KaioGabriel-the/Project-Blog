@@ -11,6 +11,19 @@
 <body id="home">
     <header class="appBar">
         <div class="name-blog">
+            <div class="menu">
+                <button onclick="abrirMenu()" class="botao-menu">☰</button>
+
+                <div id="menuLateral" class="menu-lateral">
+                    <button onclick="fecharMenu()" class="fechar">×</button>
+                    <h2>Menu</h2>
+                    <ul>
+                    <li><a href="#" style="color: white;">Início</a></li>
+                    <li><a href="#" style="color: white;">Sobre</a></li>
+                    <li><a href="#" style="color: white;">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
             <span>BLOG DO ADS</span>
         </div>
         <nav class="page">
@@ -85,5 +98,14 @@
     <footer class="footer-home">
         <p>Kaio Gabriel e Xamã pesadão</p>
     </footer>
+    <script>
+        function abrirMenu() {
+          document.getElementById("menuLateral").classList.add("ativo");
+        }
+    
+        function fecharMenu() {
+          document.getElementById("menuLateral").classList.remove("ativo");
+        }
+      </script>
 </body>
 </html>
