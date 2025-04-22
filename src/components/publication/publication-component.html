@@ -42,8 +42,9 @@
         </nav>
     </header>
     <main class="presentation">
-        <article class="publication" id="box-model">
+        <div class="publication-div">
             <h2>Box Model</h2>
+            <article class="publication" id="box-model">
             <p class="pub-body filling">Preenchimento</p>
             <p class="pub-body borders1">Bordas 1 </p>
             <p class="pub-body borders2">Bordas 2 </p>
@@ -51,139 +52,150 @@
             <p class="pub-body length">comprimento</p>
 
             <p class="date-author">2025-04-15 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="modern-fields">
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Campos Modernos</h2>
-            <form class="modern-form">
-                <label for="email">E-Mail:</label>
-                <input id="email" name="email" type="email" required>
-                <br>
-                <label for="data">Data:</label>
-                <input id="data" name="data" type="date" required>
-                <br>
-                <label for="cor">Cor:</label>
-                <input id="cor" name="cor" type="color" required>
-                <br>
-                <label for="Idade">Idade:</label>
-                <input id="idade" name="idade" type="number" min="0" max="130" required>
-                <br>
-                <label for="nota">Nota:</label>
-                <input id="nota" name="nota" type="range" min="0" max="10" required value="5">
-                <span id="nota-atual"></span>
-                <br>
-                <input type="submit" value="Enviar">
-            </form>
-            <p class="date-author">2025-04-15 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="forms">
-            <h2>Formulários e Buscas</h2>
-            
-            <p class="pub-body">Busca no google</p>
-            <form class="search-form" action="http://www.google.com/search" method="get">
-                <input type=text placeholder="Digite sua pesquisa" name="q">
-                <input type="submit" value="Pesquisar">
-            </form>
-
-            <p class="pub-body">Pesquisa no Mercado Livre</p>
-            <form class="search-form" action="https://www.mercadolivre.com.br/jm/search">
-                <input type=text placeholder="Digite sua pesquisa" name="as_word">
-                <input type="submit" value="Pesquisar">
-            </form>
-
-            <p class="pub-body">Pesquisa no Amazon</p>
-            <form class="search-form" action="https://www.amazon.com/s">
-                <input type=text placeholder="Digite sua pesquisa" name="field-keywords">
-                <select name="url">
-                    <option value="search-alias=toys">Brinquedos
-                    <option value="search-alias=dvd">Filmes
-                    <option value="search-alias=stripbooks-intl-ship">Livros
-                </select>
-                <input type="submit" value="Pesquisar">
-            </form>
-
-            <p class="date-author">2025-04-15 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="tables">
+            <article class="publication" id="modern-fields">
+                <form class="modern-form">
+                    <label for="email">E-Mail:</label>
+                    <input id="email" name="email" type="email" required>
+                    <br>
+                    <label for="data">Data:</label>
+                    <input id="data" name="data" type="date" required>
+                    <br>
+                    <label for="cor">Cor:</label>
+                    <input id="cor" name="cor" type="color" required>
+                    <br>
+                    <label for="Idade">Idade:</label>
+                    <input id="idade" name="idade" type="number" min="0" max="130" required>
+                    <br>
+                    <label for="nota">Nota:</label>
+                    <input id="nota" name="nota" type="range" min="0" max="10" required value="5">
+                    <span id="nota-atual"></span>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <p class="date-author">2025-04-15 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Tabelas</h2>
+            <article class="publication" id="tables">
+    
+                <p class="pub-body">Abaixo uma tabela 5 linhas e com as colunas numeração, produto, quantidade, e uma linha de totalização utilizando o atributo colspan</p>
+                <table class="table1">
+                    <tr>
+                        <th>Numeração</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Arroz</td>
+                        <td>2kg</td>
+                        <td>R$ 10,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Feijão</td>
+                        <td>1kg</td>
+                        <td>R$ 5,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Macarrão</td>
+                        <td>500g</td>
+                        <td>R$ 3,00</td>
+                    </tr>
+                    <tr class="total">
+                        <td colspan="3">Total</td>
+                        <td>R$ 18,00</td>
+                    </tr>
+                </table>
+                <p class="pub-body">Abaixo uma tabela com colunas numeração, produto, quantidade e preço</p>
+    
+                <table class="table1">
+                    <tr>
+                        <th>Numeração</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Arroz</td>
+                        <td>2kg</td>
+                        <td>R$ 10,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Feijão</td>
+                        <td>1kg</td>
+                        <td>R$ 5,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Macarrão</td>
+                        <td>500g</td>
+                        <td>R$ 3,00</td>
+                    </tr>
+                </table>
+                <p class="date-author">2025-04-15 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
 
-            <p class="pub-body">Abaixo uma tabela 5 linhas e com as colunas numeração, produto, quantidade, e uma linha de totalização utilizando o atributo colspan</p>
-            <table class="table1">
-                <tr>
-                    <th>Numeração</th>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Preço</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Arroz</td>
-                    <td>2kg</td>
-                    <td>R$ 10,00</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Feijão</td>
-                    <td>1kg</td>
-                    <td>R$ 5,00</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Macarrão</td>
-                    <td>500g</td>
-                    <td>R$ 3,00</td>
-                </tr>
-                <tr class="total">
-                    <td colspan="3">Total</td>
-                    <td>R$ 18,00</td>
-                </tr>
-            </table>
-            <p class="pub-body">Abaixo uma tabela com colunas numeração, produto, quantidade e preço</p>
-
-            <table class="table1">
-                <tr>
-                    <th>Numeração</th>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Preço</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Arroz</td>
-                    <td>2kg</td>
-                    <td>R$ 10,00</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Feijão</td>
-                    <td>1kg</td>
-                    <td>R$ 5,00</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Macarrão</td>
-                    <td>500g</td>
-                    <td>R$ 3,00</td>
-                </tr>
-            </table>
-            <p class="date-author">2025-04-15 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="links-list">
+        <div class="publication-div">
+            <h2>Formulários e Buscas</h2>
+            <article class="publication" id="forms">
+                
+                <p class="pub-body">Busca no google</p>
+                <form class="search-form" action="http://www.google.com/search" method="get">
+                    <input type=text placeholder="Digite sua pesquisa" name="q">
+                    <input type="submit" value="Pesquisar">
+                </form>
+    
+                <p class="pub-body">Pesquisa no Mercado Livre</p>
+                <form class="search-form" action="https://www.mercadolivre.com.br/jm/search">
+                    <input type=text placeholder="Digite sua pesquisa" name="as_word">
+                    <input type="submit" value="Pesquisar">
+                </form>
+    
+                <p class="pub-body">Pesquisa no Amazon</p>
+                <form class="search-form" action="https://www.amazon.com/s">
+                    <input type=text placeholder="Digite sua pesquisa" name="field-keywords">
+                    <select name="url">
+                        <option value="search-alias=toys">Brinquedos
+                        <option value="search-alias=dvd">Filmes
+                        <option value="search-alias=stripbooks-intl-ship">Livros
+                    </select>
+                    <input type="submit" value="Pesquisar">
+                </form>
+    
+                <p class="date-author">2025-04-15 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Lista de Links</h2>
+            <article class="publication" id="links-list">
             <p class="pub-body left-text">Lista com alguns links</p>
             <ul>
                 <li><a href="http://www.google.com">Google</a></li>
                 <li><a href="http://www.ifpi.edu.br" target="_blank">IFPI</a></li>
                 <li>
-                    <a href="imagens/perfil.jpg" target="_blank">
-                        <img src="imagens/perfil_thumb.png" alt="Imagem de perfil">
-                    </a>
+                <a href="imagens/perfil.jpg" target="_blank">
+                    <img src="imagens/perfil_thumb.png" alt="Imagem de perfil">
+                </a>
                 </li>
                 <li><a href="#footer-home">Fim da página</a></li>
             </ul>
             <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="lists">
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Listas</h2>
+            <article class="publication" id="lists">
             <p class="pub-body left-text">Lista não ordenadas de compras</p>
             <ul>
                 <li>Arroz</li>
@@ -201,117 +213,132 @@
                 <li>Comer</li>
                 <li>Estudar mais</li>
             </ol>
-
+        
             <p class="pub-body">Lista de compras com subitens</p>
             <ul>
                 <li>Arroz
-                    <ul>
-                        <li>Arroz integral</li>
-                        <li>Arroz parbolizado</li>
-                        <li>Arroz agulhinha</li>
-                    </ul>
-                </li>
-                <li>Feijão
-
-                </li>
-                <li>Macarrão
-                    <ul>
-                        <li>Espaguete</li>
-                        <li>Fusilli</li>
-                        <li>Parafuso</li>
-                    </ul>
-                </li>
-                <li>Carne
-                    <ul>
-                        <li>Carne de sol</li>
-                        <li>Carne moída</li>
-                        <li>Carne de porco</li>
-                    </ul>
-                </li>
-                <li>Frango
-                    <ul>
-                        <li>Peito de frango</li>
-                        <li>Sobrecoxa</li>
-                        <li>Asa de frango</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <p class="pub-body ">Lista de definições de siglas de computação</p>
-
-            <dl>
-                <dt>HTML</dt>
-                <dd>Hyper Text Markup Language</dd>
-                <dt>CSS</dt>
-                <dd>Cascading Style Sheets</dd>
-                <dt>JS</dt>
-                <dd>JavaScript</dd>
-                <dt>PHP</dt>
-                <dd>Hypertext Preprocessor</dd>
-            </dl>
-            <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="alignments">
+                        <ul>
+                            <li>Arroz integral</li>
+                            <li>Arroz parbolizado</li>
+                            <li>Arroz agulhinha</li>
+                        </ul>
+                    </li>
+                    <li>Feijão
+    
+                    </li>
+                    <li>Macarrão
+                        <ul>
+                            <li>Espaguete</li>
+                            <li>Fusilli</li>
+                            <li>Parafuso</li>
+                        </ul>
+                    </li>
+                    <li>Carne
+                        <ul>
+                            <li>Carne de sol</li>
+                            <li>Carne moída</li>
+                            <li>Carne de porco</li>
+                        </ul>
+                    </li>
+                    <li>Frango
+                        <ul>
+                            <li>Peito de frango</li>
+                            <li>Sobrecoxa</li>
+                            <li>Asa de frango</li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <p class="pub-body ">Lista de definições de siglas de computação</p>
+    
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Hyper Text Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                    <dt>JS</dt>
+                    <dd>JavaScript</dd>
+                    <dt>PHP</dt>
+                    <dd>Hypertext Preprocessor</dd>
+                </dl>
+                <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Alinhamentos</h2>
-            <p class="pub-body left-text">Texto alinhado à esquerda</p>
-            <p class="pub-body center-text">Texto Centralizado Texto</p>
-            <p class="pub-body justified-text">Um pequeno texto injusto que foi justificado. Vejamos as injustiças desse texxto quando_colocado_dessa_maneira</p>
-            <p class="pub-body right-text">Texto à direita</p>
-            <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="fonts">
+            <article class="publication" id="alignments">
+                <p class="pub-body left-text">Texto alinhado à esquerda</p>
+                <p class="pub-body center-text">Texto Centralizado Texto</p>
+                <p class="pub-body justified-text">Um pequeno texto injusto que foi justificado. Vejamos as injustiças desse texxto quando_colocado_dessa_maneira</p>
+                <p class="pub-body right-text">Texto à direita</p>
+                <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Fontes</h2>
-            <p class="pub-body verdana-text">Lorem ipsum - Verdana</p>
-            <p class="pub-body arial-text">Lorem ipsum - Arial</p>
-            <p class="pub-body monospace">Lorem ipsum - Monospace QQQ</p>
-            <p class="pub-body calibri-text">Lorem ipsum - Calibri</p>
-            <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="text-decors">
+            <article class="publication" id="fonts">
+                <p class="pub-body verdana-text">Lorem ipsum - Verdana</p>
+                <p class="pub-body arial-text">Lorem ipsum - Arial</p>
+                <p class="pub-body monospace">Lorem ipsum - Monospace QQQ</p>
+                <p class="pub-body calibri-text">Lorem ipsum - Calibri</p>
+                <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Negrito, itálico, etc...</h2>
-            <p class="pub-body bold-text">Negrito</p>
-            <p class="pub-body italic-text">Itálico</p>
-            <p class="pub-body underlined-text">Sublinhado</p>
-            <p class="pub-body line-through-text">Tachado</h6>
-            <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="colors">
+            <article class="publication" id="text-decors">
+                <p class="pub-body bold-text">Negrito</p>
+                <p class="pub-body italic-text">Itálico</p>
+                <p class="pub-body underlined-text">Sublinhado</p>
+                <p class="pub-body line-through-text">Tachado</h6>
+                <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Estudando sobre cores</h2>
-            <p class="pub-body red-text">Vermelha</p>
-            <p class="pub-body blue-text">Azul</p>
-            <p class="pub-body green-text">Verde de novo em um h6</p>
-            <h6 class="pub-body green-text">Verde</h6>
-            <p class="pub-body black-text">Preta</p>
-            <p class="pub-body white-text">Branca</p>
-            <p class="pub-body light-gray-text">Tom de cinza claro</p>
-            <p class="pub-body dark-gray-text">Tom de cinza escuro</p>
-            <p class="pub-body orange-text">Laranja</p>
-            <p class="pub-body pink-text">Rosa</p>
-            <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="symbols">
+            <article class="publication" id="colors">
+                <p class="pub-body red-text">Vermelha</p>
+                <p class="pub-body blue-text">Azul</p>
+                <p class="pub-body green-text">Verde de novo em um h6</p>
+                <h6 class="pub-body green-text">Verde</h6>
+                <p class="pub-body black-text">Preta</p>
+                <p class="pub-body white-text">Branca</p>
+                <p class="pub-body light-gray-text">Tom de cinza claro</p>
+                <p class="pub-body dark-gray-text">Tom de cinza escuro</p>
+                <p class="pub-body orange-text">Laranja</p>
+                <p class="pub-body pink-text">Rosa</p>
+                <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Aprendendo sobre símbolos e emojis divertidos</h2>
-            <p class="pub-body">A primeira tag de uma página é a tag é a &lt;html&gt;</p>
-            <p class="pub-body">Copyright: &copy;</p>
-            <p class="pub-body">Euro: &euro;</p>
-            <p class="pub-body">Iene japonês: &yen;</p>
-            <p class="pub-body">Ômega: &Omega;</p>
-            <p class="pub-body">Smiley: &#128516; &#128564;</p>
-            <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="ifpi">
+            <article class="publication" id="symbols">
+                <p class="pub-body">A primeira tag de uma página é a tag é a &lt;html&gt;</p>
+                <p class="pub-body">Copyright: &copy;</p>
+                <p class="pub-body">Euro: &euro;</p>
+                <p class="pub-body">Iene japonês: &yen;</p>
+                <p class="pub-body">Ômega: &Omega;</p>
+                <p class="pub-body">Smiley: &#128516; &#128564;</p>
+                <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Sobre o IFPI</h2>
-            <p class="pub-body">O Instituto Federal é a nossa instituição de ensino.</p>
-            <p class="pub-body">Seguem abaixo o link para a página e logo abaixo a sua logomarca:</p>
-            <img src="https://www.ifpi.edu.br/topo_ifpi.png" alt="Logomarca do IFPI">
-            <p><a target="_blank" href="http://www.ifpi.edu.br">Página do IFPI</a></p>
-            <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
-        <article class="publication" id="hello-world">
+            <article class="publication" id="ifpi">
+                <p class="pub-body">O Instituto Federal é a nossa instituição de ensino.</p>
+                <p class="pub-body">Seguem abaixo o link para a página e logo abaixo a sua logomarca:</p>
+                <img src="https://www.ifpi.edu.br/topo_ifpi.png" alt="Logomarca do IFPI">
+                <p><a target="_blank" href="http://www.ifpi.edu.br">Página do IFPI</a></p>
+                <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
+        <div class="publication-div">
             <h2>Minha primeira postagem</h2>
-            <p class="pub-body">Hello, HTML e CSS!</p>
-            <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
-        </article>
+            <article class="publication" id="hello-world">
+                <p class="pub-body">Hello, HTML e CSS!</p>
+                <p class="date-author">2025-04-08 - Xamã & Kaio <a href="#home">&nbsp;↑&nbsp;</a></p>
+            </article>
+        </div>
     </main>
     <footer id="footer-home">
         <p>&copy; 2025 Kaio Gabriel & Xamã Cardoso. Todos os direitos reservados.</p>
