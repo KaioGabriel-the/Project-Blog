@@ -396,18 +396,21 @@ ul, ol, dl{
     }
   
     .table1 {
-      /* max-width: 10%; */
-      width: 15%;
-      min-width: 10%;
-      /* max-width: 15%; */
+      width: 100%;
+      min-width: 100%;
       margin: auto;
+      box-sizing: border-box;
       font-size: 0.9rem;
+      overflow-x: auto;
+      table-layout: fixed;
     }
   
     .table1 th,
     .table1 td {
         font-size: 0.75rem;
         padding: 0.75rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
   
     ul, ol, dl {
