@@ -5,6 +5,7 @@ body {
 
 .appBar{
     display: flex;
+    /* width: 100%; */
     background-color: #B92DFF;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 100%;
     transition: text-shadow 0.3s ease;
 }
 
